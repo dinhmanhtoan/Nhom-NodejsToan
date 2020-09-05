@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #666 !important;
+    font-family: 'Avenir Next',sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (min-width: 1320px){
+    .container {
+        min-width: 1320px!important;
+    }
+}
+
+.boats-header{
+    width: 100%;
+}
+.search-header{
+    position: relative;
+    background: center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 400px;
+}
+
+.search-header img{
+    width: 100%;
+}
+.search-header_title{
+    z-index: 9;
+    position: absolute;
+    bottom: 60px;
+    padding: 0;
+    line-height: 1;
+    font-size: 52px!important;
+    text-shadow: 0 4px 8px rgba(21,39,75,.2);
+    color: #fff;
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.search-header_title small{
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+/* search*/
+
+/*refine-search*/
+.refine-search{
+    padding: 30px 0;
+}
+.boat-summary {
+    color: #666;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Avenir Next',sans-serif;
+    font-style: normal;
+}
+/* list boat*/
+.boat-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    margin-bottom: 60px;
+    flex-basis: calc(25% - 16px);
+}
+.boat-list_item{
+    color: #666;
+    font-size: 14px;
+    margin: 0 8px 24px;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 18px 0 rgba(21,39,75,.15);
+    flex-basis: calc(25% - 16px);
+    display: flex;
+    justify-content: normal;
+    flex-wrap: wrap;
+}
+.boat-list_item_image {
+    border-radius: 4px 4px 0 0;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+ 
+}
+.boat-list_item_image img{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: cover;
+}
+.boat-list_item_basic{
+    background: rgba(0,29,88,.5);
+    padding: 6px 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    color: #fff;
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+}
+.boat-list__item__holder{
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.boat-list__item__header {
+    display: block;
+    flex-basis: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.boat-list__item__title{
+    font-size: 16px;
+    padding: 0;
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.boat-list_item:hover{
+    text-decoration: none;
+    outline: 0!important;
+    color: #666;
+}
+.boat-list__item__location>*{
+    flex-basis: 50%;
+}
+.boat-list__item__price>*{
+    flex-basis: 50%;
+}
+.boat-list__item__price span{
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #14264a;
+    font-size: 16px;
+}
+.book-form{
+    padding: 0 20px 30px;
+}
+.hero-article-img{
+    width: 100%;
+}
+.hero-article-img img{
+    width: 100%;
+}
+/*booking-title*/
+.form-group input{
+    width: 100%;
+}
+.booking-title{
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+.booking-img{
+    width: 100%;
+}
+.booking-img img{
+    width: 100%;
+}
+.booking_floating{
+    z-index: 9;
+    position: absolute;
+    right: 0;
+    float: right;
+    padding: 0 45px 20px;
+    margin-top: 5px;
+    margin-bottom: 25px!important;
+    border-radius: 4px;
+    color: #000;
+    border: solid 1px #dadedf;
+    border-top: 3px solid #0751c2;
+    background-color: #fff;
+}
+.booking-main{
+    background: #f5f8f9;
+    min-height: fit-content;
+    padding: 35px 0;
+}
+.switch{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+    color: #979eae;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: default;
+}
+.slider{
+    border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: solid 1px #a7a7a7;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider::before{
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #ccc;
+    transition: .4s;
+  
+}
+.instantbookable input[type=checkbox]:checked~.slider:before{
+    transform: translateX(26px);
+
+}
+.instantbookable input[type=checkbox]:checked~.round{
+    background-color: #0751c2;
+}
+#IsInstantBookable{
+    display: none;
+    overflow: visible;
+}
+
+/*product */
+
+.panel-gray{
+    background-color: rgba(238,239,242,.6);
+    background-image: none;
+    flex: 1 0 auto;
+}
+.param-group-end{
+    float: left;
+    width: 50%;
+}
+.boat-detail__params{
+    padding: 20px 0;
+}
+.param-group__title{
+    display: block;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #14264a;
+    line-height: 1.18;
+    border-bottom: 1px solid #dadedf;
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.param-group .col-6:first-child{
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(21,39,75,.7);
+}
+.param-group__subtitle{
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    color: #14264a;
+    font-size: 16px;
+    border-bottom: 1px solid #dadedf;
+}
+.param-group .col-6:last-child{
+    width: 50%;
+    margin: 0;
+    font-size: 16px;
+    color: rgba(21,39,75,.7);
+    line-height: 1.88;
+}
+
+/* form */
+.book-form_prices{
+    margin: 0 10px;
+    border-top: 1px solid #e7e9ed;
+}
+.book-total-item-template{
+    border-top: 1px solid #e7e9ed; 
+}
+.book-total-item-template div{
+    margin-left: 0;
+    font-size: 24px;
+    color: #14264a;
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#book-item-template .col-xl-6:last-child{
+    text-align: end;
+}
+.book-form__row .row, .bookingwidget__row .row, .operator-form__row .row {
+    margin: 15px -10px;
+}

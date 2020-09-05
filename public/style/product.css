@@ -1,0 +1,180 @@
+body{
+    font-family: 'Avenir Next',sans-serif  !important ;
+}
+.owl-carousel{
+    position: relative;
+}
+.owl-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+}
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.fa-chevron-circle-right{
+    color: white;
+    font-size: 35px;
+}
+.fa-chevron-circle-left{
+    color: white;
+    font-size: 35px;
+}
+.owl-prev:focus{
+    outline: none;
+}
+.owl-next:focus{
+    outline: none;
+}
+.owl-next:hover{
+    background: none !important;
+}
+.owl-prev:hover{
+    background: none !important;
+}
+.owl-stage{
+    height: 375px;
+}
+.owl-item{
+    height: 100%;
+}
+.item{
+    height: 100%;
+}
+.item img{
+    height: 100%;
+}
+.boat-detail{
+    flex: 1 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+.prev::after{
+    content: 'AUGUST';
+    font-size: 12px;
+    margin-left: 5px;
+}
+.next::before{
+    content: 'OCTOBER';
+    font-size: 12px;
+    margin-right: 5px;
+}
+.prev{
+    float: left;
+    color: #14274a;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.next{
+ float: right;
+ color: #14274a;
+ font-size: 12px;
+ text-transform: uppercase;
+ cursor: pointer;
+}
+.month{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+}
+
+@media (min-width: 1320px){
+    .container {
+        min-width: 1320px!important;
+    }
+}
+.book-form__title{
+    margin: 21px 0 12px;
+    font-size: 24px;
+    color: #14264a;
+    text-align: center;
+    font-family: 'Avenir Next',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.table{
+    width: 100%;
+}
+.book-form{
+    padding: 0 20px 30px;
+}
+.boat-item__calendar table{
+    width: 100%;
+}
+.boat-detail__floating{
+    z-index: 9;
+    right: 0;
+    float: right;
+    margin-bottom: 25px!important;
+    border-radius: 4px;
+    border: solid 1px #dadedf;
+    border-top: 3px solid #0751c2;
+    background-color: #fff;
+    margin-top: -255px;
+}
+th{
+    text-align: center;
+}
+.boat-item__calendar table thead .nav th{
+    line-height: 24px; 
+    padding-bottom: 10px;
+}
+.boat-item__calendar table th{
+    text-align: center;
+    font-size: 15px;
+}
+.boat-item__calendar table td{
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.boat-item__calendar .weekdays th{
+    color: #6a808c;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px 0 15px;
+}
+.boat-item__calendar table tbody span{
+    display: block;
+    line-height: 36px;
+    width: 35px;
+    margin: 0 auto;
+    color: #a8b9c1;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+
+}
+
+
+.active span:hover {
+    border: 2px solid #0751c2;
+    line-height: 30px;
+    cursor: pointer;
+}
+.main-search_passengers{
+    width: 100%;
+    height: 100%;
+    position: relative;
+ 
+}
+.fa-plus-circle{
+    position: absolute;
+    right: 5px;
+    top: 28%;
+    color: blue;
+    cursor: pointer;
+}
+.fa-minus-circle{
+    position: absolute;
+    left: 5px;
+    top: 28%;
+    color: blue;
+    cursor: pointer;
+}
+
